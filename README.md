@@ -4,6 +4,11 @@
 
 
 - Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
+  - **_Found the information on following website: `demo.testfire.net` Inside Altoro - About Altoro Mutual - Executives & Management_**  
+  [Executives & Management - Altoro Mutual](http://www.altoromutual.com/index.jsp?content=inside_executives.htm "Executives & Management - Altoro Mutual")  
+  
+    - **Karl Fitzgerald, Chairman & Chief Executive Officer of Altoro Mutual**
+    ![Executives & Management - Altoro Mutual]( "Executives & Management - Altoro Mutual")
 
 - How can this information be helpful to an attacker:
 
