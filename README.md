@@ -4,26 +4,44 @@
 
 
 - Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
-  - **_Found the information on following website: `demo.testfire.net` Inside Altoro - About Altoro Mutual - Executives & Management_**  
+  - **_Found the information on following website: `demo.testfire.net` Inside Altoro -> About Altoro Mutual -> Executives & Management_**  
   [Executives & Management - Altoro Mutual](http://www.altoromutual.com/index.jsp?content=inside_executives.htm "Executives & Management - Altoro Mutual")  
   
     - **Karl Fitzgerald, Chairman & Chief Executive Officer of Altoro Mutual**
     ![Executives & Management - Altoro Mutual]( "Executives & Management - Altoro Mutual")
 
-- How can this information be helpful to an attacker:
-
+- How can this information be helpful to an attacker:  
+  - **_This information is very useful to a Hacker (attacker) who wants to send phishing email directly to the executive members._**
 
 #### Step 2: DNS and Domain Discovery
 
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
-  1. Where is the company located: 
+  1. Where is the company located:   
+  
+**_`Sunnyvale, CA, 94085 - USA`_**  
 
-  2. What is the NetRange IP address:
+  2. What is the NetRange IP address:  
+  
+**_`65.61.137.64 - 65.61.137.127`_**  
 
-  3. What is the company they use to store their infrastructure:
+  3. What is the company they use to store their infrastructure:  
 
-  4. What is the IP address of the DNS server:
+
+**_`CustName:       Rackspace Backbone Engineering`  
+`Address:        9725 Datapoint Drive, Suite 100`  
+`City:           San Antonio`  
+`StateProv:      TX`  
+`PostalCode:     78229`  
+`Country:        US`  
+`RegDate:        2015-06-08`  
+`Updated:        2015-06-08`  
+`Ref:            https://rdap.arin.net/registry/entity/C05762718`_**  
+  
+
+  4. What is the IP address of the DNS server:  
+
+**_`65.61.137.117`_**
 
 #### Step 3: Shodan
 
