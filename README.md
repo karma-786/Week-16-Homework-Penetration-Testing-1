@@ -47,6 +47,8 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 - What open ports and running services did Shodan find:
 
+**_`Open Ports: 80, 443, 8080`_** on the following website: `https://www.shodan.io/host/65.61.137.117`
+
 #### Step 4: Recon-ng
 
 - Install the Recon module `xssed`. 
