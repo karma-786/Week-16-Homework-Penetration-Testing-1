@@ -39,6 +39,8 @@ Updated:        2015-06-08
 Ref:            https://rdap.arin.net/registry/entity/C05762718
 ```  
 
+![Whois Record](/Homework/images/AltoroMutual - Network Whois record.PNG)
+
   4. What is the IP address of the DNS server:  
 
 **_`65.61.137.117`_**
