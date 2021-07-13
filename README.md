@@ -7,8 +7,8 @@
   - **_Found the information on following website: `demo.testfire.net` Inside Altoro -> About Altoro Mutual -> Executives & Management_**  
   [Executives & Management - Altoro Mutual](http://www.altoromutual.com/index.jsp?content=inside_executives.htm "Executives & Management - Altoro Mutual")  
   
-    - **Karl Fitzgerald, Chairman & Chief Executive Officer of Altoro Mutual**
-    ![Executives & Management - Altoro Mutual]( "Executives & Management - Altoro Mutual")
+    - **Karl Fitzgerald, Chairman & Chief Executive Officer of Altoro Mutual**  
+![Executives & Management - Altoro Mutual](/Homework/images/AltoroMutual.PNG "Executives & Management - Altoro Mutual")
 
 - How can this information be helpful to an attacker:  
   - **_This information is very useful to a Hacker (attacker) who wants to send phishing email directly to the executive members._**
@@ -38,18 +38,22 @@ RegDate:        2015-06-08
 Updated:        2015-06-08
 Ref:            https://rdap.arin.net/registry/entity/C05762718
 ```  
-
-![Whois Record](/Homework/images/AltoroMutual - Network Whois record.PNG)
+  
+![Whois Record](/Homework/images/AltoroMutual%20-%20Network%20Whois%20record.PNG)
 
   4. What is the IP address of the DNS server:  
 
-**_`65.61.137.117`_**
+**_`65.61.137.117`_**  
+
+![IP Address](/Homework/images/AltoroMutual%20-%20IP%20Address.PNG)
 
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
 
-**_`Open Ports: 80, 443, 8080`_** on the following website: `https://www.shodan.io/host/65.61.137.117`
+**_`Open Ports: 80, 443, 8080`_** on the following website: `https://www.shodan.io/host/65.61.137.117`  
+
+![Open Ports](/Homework/images/Shodan%20-%2065-61-137-117.PNG)
 
 #### Step 4: Recon-ng
 
