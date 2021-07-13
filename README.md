@@ -85,18 +85,58 @@ Is Altoro Mutual vulnerable to XSS: **_Yes it was the only vulnerablities found,
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
-- Command for Zenmap to run a service scan against the Metasploitable machine: 
- 
-- Bonus command to output results into a new text file named `zenmapscan.txt`:
+- Command for Zenmap to run a service scan against the Metasploitable machine:  
+  - Run the RDP to start the `Pentesting Lab`.  
+  - Open the `Hyper-V-Manager` to view all the active VM's.  
+  - Double click the `Kali` VM to start.
+  - Start the `Terminal`  
+  - From the `Terminal` enter the command `zenmap`
+  - The Metasploitable machine IP address is `192.168.0.10`  
+  - Input Target `192.168.0.10`
+  - Profile: `Quick scan`  
+  - The raw nmap Command is `nmap -T4 -A 192.168.0.10`  
+  - Click the `SCAN` button to get the results.
 
-- Zenmap vulnerability script command: 
+![ZENMAP](/images/Zenmap-scan-against-the-Metasploitable-machine.PNG)
+
+- Bonus command to output results into a new text file named `zenmapscan.txt`:
+  - To save the results in the `zenmapscan.txt` add the following on the command line: `-oN zenmapscan.txt` so it should look as following: `nmap -T4 -A -oN zenmapscan.txt 192.168.0.10`  
+  - You can also enter this in the `Terminal command line`: `nmap -T4 -A -oN zenmapscan.txt 192.168.0.10`  
+
+![zenmapscan.txt](/images/Zenmap-scan-against-the-Metasploitable-machine-save-to-zenmapscan-txt.PNG)
+
+[zenmapscan.txt - file](/zenmapscan.txt)  
+
+- Zenmap vulnerability script command:  
+  - There are two scrips that can be located in Zenmap for vulnerability associated with the service running on the 139/445 port.
+    - From the **_Profile_** tab select **_Edit Selected Profile_**
+    - Select the **_Scripting_** tab and view all the scripts.
+    - Check the box off for the **_`ftp-vsftpd-backdoor`_** and **_`smb-enum-shares`_**.
+    - **_`Save Changes`_** to save the profile settings.
+
+- The raw command should look like:  
+  **_`nmap -T4 -F --script ftp-vsftpd-backdoor,smb-enum-shares 192.168.0.10`_**  
+
+    - `-T4`: -T<0-5>: Set timing template (higher is faster)
+    - `-F`: Fast mode - Scan fewer ports than the default scan
+    - `--script`: Runs the scripted scan that is followed.
+    - `ftp-vsftpd-backdoor`: This script attempts to exploit the backdoor using the innocuous id command by default, but that can be changed with the exploit.cmd or ftp-vsftpd-backdoor.cmd ...
+    - `smb-enum-shares`: Host script results: | smb-enum-shares: | account_used: WORKGROUP\​Administrator | ADMIN$ | Type: STYPE_DISKTREE_HIDDEN | Comment: Remote Admin ...
+    - `192.168.0.10`: IP address of host that will be scanned.
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
+      - As per the below snapshots `Zenmap was able to enumerate the vulnerable service` for port 139/445.      
+![Zenmap scan against the Metasploitable machine vulnerability scan results](/images/Zenmap-scan-against-the-Metasploitable-machine-vulnerability-scan-results-1.PNG)  
+![Zenmap scan against the Metasploitable machine vulnerability scan results](/images/Zenmap-scan-against-the-Metasploitable-machine-vulnerability-scan-results-2.PNG)  
 
-  2. Why is it dangerous:
+  2. Why is it dangerous:  
+  **_The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which, on successful execution, results in opening the backdoor on port 6200 of the system and running as root._**  
+  **_SMB vulnerabilities allow their payloads to spread laterally through connected systems._**  
 
-  3. What mitigation strategies can you recommendations for the client to protect their server:
+  3. What mitigation strategies can you recommendations for the client to protect their server:  
+  **_The vsFTPd 2.3.4 backdoor reported on 2011-07-04 (CVE-2011-2523). The VSFTPD 2.3.4 service vulnerability is very unlikly an issue in a live situation because this version of VSFTPD is old nowadays and the vulnerable version was only available for one day._**
+  **_A patch was released by Microsoft for SMB vulnerabilities in March 2017. Apply SMB patch is the best solution for Samba._**
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
