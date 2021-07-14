@@ -131,13 +131,20 @@ Your client has asked that you help identify any vulnerabilities with their file
 ![Zenmap scan against the Metasploitable machine vulnerability scan results](/images/Zenmap-scan-against-the-Metasploitable-machine-vulnerability-scan-results-2.PNG)  
 
   2. Why is it dangerous:  
-  **_The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which, on successful execution, results in opening the backdoor on port 6200 of the system and running as root._**  
-  **_SMB vulnerabilities allow their payloads to spread laterally through connected systems._**  
+      -  **_This is dangerous due to the `VSFTPD 2.3.4` backdoor attack can be applied on `port 21` via a malicious code, if successful execution, opens the backdoor on `port 6200`._**  
+          - _This backdoor was introduced into the vsftpd-2.3.4.tar.gz archive between June 30th 2011 and July 1st 2011 according to the most recent information available. This backdoor was removed on July 3rd 2011._ (1)  
+          - _The concept of the attack on VSFTPD 2.3.4 is to trigger the malicious vsf_sysutil_extra(); function by sending a sequence of specific bytes on port 21, which, on successful execution, results in opening the backdoor on port 6200 of the system and running as root._ (2)  
+  
+      - **_The `Windows Server Message Block (SMB)` get access through the organization's networks, the SMB protocols used by PC's for file and printer sharing, along with the remote access services._**  
+  
+        - _SMB vulnerabilities allow their payloads to spread laterally through connected systems._ (3)    
 
   3. What mitigation strategies can you recommendations for the client to protect their server:  
-  **_The vsFTPd 2.3.4 backdoor reported on 2011-07-04 (CVE-2011-2523). The VSFTPD 2.3.4 service vulnerability is very unlikly an issue in a live situation because this version of VSFTPD is old nowadays and the vulnerable version was only available for one day._**
-  **_A patch was released by Microsoft for SMB vulnerabilities in March 2017. Apply SMB patch is the best solution for Samba._**
+      - **_The `vsFPTD 2.3.4 patch was released on July 3, 2011` with the patch constantly monitered and updated._**  
 
+        - _The vsFTPD v2.3.4 backdoor reported on 2011-07-04 (CVE-2011-2523)._ (4)  
+
+      - **_The `SMB` (`CVE-2017-0145`) patch was released by Microsoft `MS17-010` , and the `SAMBA` (`CVE-2017-0145`) patches were released by Red Had for Linux `RHSA-2017:1390`_** (5, 6 & 7)
 ---
 
 ### References
@@ -146,7 +153,16 @@ Your client has asked that you help identify any vulnerabilities with their file
 - [Recon-ng V5 - Marketplace & Installing Recon Modules (whois, subdomain enumeration)](https://www.youtube.com/watch?v=oSt6WdTaCV4) HackerSploit (Youtube) Nov 25, 2019.
 - [Recon-ng 5.1 Cheat Sheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf) lanmaster53, Nov 21, 2019.
 - Gordon Lyon: [Zenmap is the official Nmap Security Scanner GUI.](https://nmap.org/zenmap/) Zenmap.  
-- [Recon-NG Tutorial](https://hackertarget.com/recon-ng-tutorial/) SECURITY NEWS, Feb 16, 2018 on hackertarget.com
+- [Recon-NG Tutorial](https://hackertarget.com/recon-ng-tutorial/) SECURITY NEWS, Feb 16, 2018 on hackertarget.com  
+- [vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)](https://www.exploit-db.com/exploits/17491) Tags: Metasploit Framework (MSF) on EXPLOIT DATABASE BY OFFENSIVE SECURITY (1)  
+- [Vulnerability analysis of VSFTPD 2.3.4 backdoor](https://subscription.packtpub.com/book/networking_and_servers/9781786463166/1/ch01lvl1sec18/vulnerability-analysis-of-vsftpd-2-3-4-backdoor) Packt (2)  
+- Pieter Arntz: [How threat actors are using SMB vulnerabilities](https://blog.malwarebytes.com/101/2018/12/how-threat-actors-are-using-smb-vulnerabilities/) Posted on Malwarebytes, Dec 14, 2018. (3)  
+- [Exploiting VSFTPD v2.3.4 on Metasploitable 2](https://www.hackingtutorials.org/metasploit-tutorials/exploiting-vsftpd-metasploitable/) By: HACKING TUTORIALS ON JULY 29, 2016.  
+- [File ftp-vsftpd-backdoor](https://nmap.org/nsedoc/scripts/ftp-vsftpd-backdoor.html) Daniel Miller, NMAP.ORG
+- [CVE-2011-2523 Detail](https://nvd.nist.gov/vuln/detail/CVE-2011-2523) NATIONAL VULNERABILITY DATABASE (4)  
+- [Microsoft Security Bulletin MS17-010 - Critical](https://docs.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010) Microsoft, Published: March 14, 2017 (5)
+- [CVE-2017-7494.html](https://www.samba.org/samba/security/CVE-2017-7494.html) Samba.org (6)
+- [CVE-2017-7494](https://access.redhat.com/security/cve/cve-2017-7494) Red Hat, Public on May 23, 2017.  
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
@@ -157,6 +173,6 @@ Your client has asked that you help identify any vulnerabilities with their file
 ### `July 12, 2021 -- UofT Cybersecurity - Boot Camp`
 #### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
 ```
-હરે કૃષ્ણ હરે કૃષ્ણ, કૃષ્ણ કૃષ્ણ હરે હરે |  
-હરે રામ હરે રામ, રામ રામ હરે હરે ||
+હરે કૃષ્ણ હરે કૃષ્ણ, કૃષ્ણ કૃષ્ણ હરે હરે |  Hare Krishna Hare Krishna, Krishna Krishna Hare Hare |
+હરે રામ હરે રામ, રામ રામ હરે હરે ||   Hare Ram Hare Ram, Ram Ram Hare Hare ||
 ```
