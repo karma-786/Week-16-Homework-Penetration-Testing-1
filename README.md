@@ -139,6 +139,16 @@ Your client has asked that you help identify any vulnerabilities with their file
   **_A patch was released by Microsoft for SMB vulnerabilities in March 2017. Apply SMB patch is the best solution for Samba._**
 
 ---
+
+### References
+
+- Hacking Blogs: [What Is Recon-ng? How To Use Recon-ng | Best Guide](https://hackingblogs.com/learn-recon-ng/), May 25, 2018  
+- [Recon-ng V5 - Marketplace & Installing Recon Modules (whois, subdomain enumeration)](https://www.youtube.com/watch?v=oSt6WdTaCV4) HackerSploit (Youtube) Nov 25, 2019.
+- [Recon-ng 5.1 Cheat Sheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf) lanmaster53, Nov 21, 2019.
+- Gordon Lyon: [Zenmap is the official Nmap Security Scanner GUI.](https://nmap.org/zenmap/) Zenmap.  
+- [Recon-NG Tutorial](https://hackertarget.com/recon-ng-tutorial/) SECURITY NEWS, Feb 16, 2018 on hackertarget.com
+
+---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
 
   
