@@ -166,7 +166,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
-
+---
   
 ## :sunglasses: `Ketan Vithal Patel` :sunglasses:
 ==============================================
