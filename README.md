@@ -162,7 +162,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 - [CVE-2011-2523 Detail](https://nvd.nist.gov/vuln/detail/CVE-2011-2523) NATIONAL VULNERABILITY DATABASE (4)  
 - [Microsoft Security Bulletin MS17-010 - Critical](https://docs.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010) Microsoft, Published: March 14, 2017 (5)
 - [CVE-2017-7494.html](https://www.samba.org/samba/security/CVE-2017-7494.html) Samba.org (6)
-- [CVE-2017-7494](https://access.redhat.com/security/cve/cve-2017-7494) Red Hat, Public on May 23, 2017.  
+- [CVE-2017-7494](https://access.redhat.com/security/cve/cve-2017-7494) Red Hat, Public on May 23, 2017. (7)   
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
