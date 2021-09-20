@@ -113,4 +113,13 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+---
 
+## Week 16 Homework Solution: Penetration Testing 1
+
+Refer to the following solution files for the homework worksheets: 
+
+* [Week 16 Homework Solution: Penetration Testing 1](https://github.com/karma-786/Week-16-Homework-Penetration-Testing-1/blob/main/Week%2016%20Homework%20Penetration%20Testing%201.md)  
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
