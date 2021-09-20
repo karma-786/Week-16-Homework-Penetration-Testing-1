@@ -172,7 +172,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 ## :sunglasses: `Ketan Vithal Patel` :sunglasses:  
 
 
-### `July 12, 2021 -- UofT Cybersecurity - Boot Camp`
+### `Monday, July 12, 2021 -- UofT Cybersecurity - Boot Camp`
 #### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
 ```
 હરે કૃષ્ણ હરે કૃષ્ણ, કૃષ્ણ કૃષ્ણ હરે હરે |  Hare Krishna Hare Krishna, Krishna Krishna Hare Hare |
